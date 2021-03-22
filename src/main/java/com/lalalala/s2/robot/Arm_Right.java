@@ -2,7 +2,7 @@ package com.lalalala.s2.robot;
 
 import org.springframework.stereotype.Component;
 
-@Component("ar")
+@Component
 public class Arm_Right extends Arm {
 
 	public Arm_Right() {
