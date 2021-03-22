@@ -5,4 +5,23 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 		
+		
+	<!-- Arm_Left arm_Left = new Arm_Left() -->
+	<bean class="com.lalalala.s2.robot.Arm_Left" id="arm_Left"></bean>
+	
+	<!-- Arm_Right arm_Right = new Arm_Right() -->
+	<bean class="com.lalalala.s2.robot.Arm_Right" id="arm_Right"></bean>
+	
+	<!-- Robot 객체 생성 -->
+	<!-- Robot robot = new Robot() 기본생성자 호출 -->
+	<bean class="com.lalalala.s2.robot.Robot" id="robot">
+		<!-- Setter 사용 -->
+		<property name="arm_Left" ref="arm_Left"></property>
+		<property name="arm_Right" ref="arm_Right"></property>
+		<!-- 생성자 사용 -->
+		<constructor-arg name="age" value="20"></constructor-arg>
+		<constructor-arg name="name" value="R1"></constructor-arg>
+		<constructor-arg name="price" value="200"></constructor-arg>
+	</bean>
+	
 </beans>

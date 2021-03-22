@@ -14,13 +14,17 @@ public class RobotTest {
 	
 	@Autowired
 	private Robot robot;
-
+//	private Arm_Left arm_Left;
+	
 	@Test
 	public void test() {
-		// Left Arm의 name
-		System.out.println(robot.getArm_Left().getName());
-		// Right Arm의 name
-		System.out.println(robot.getArm_Right().getName());
+		assertNotNull(robot.getArm_Right());// true
+		
+//		assertNotNull(robot.getArm_Left());	// true
+//		assertNull(robot.getArm_Left());	// true
+//		assertNotNull(robot);				// true
+//		assertNull(arm_Left);				// fail, null이기를 희망했는데 null이 아닌게 와서
+//		assertNotNull(arm_Left);			// true
 	}
 
 }
