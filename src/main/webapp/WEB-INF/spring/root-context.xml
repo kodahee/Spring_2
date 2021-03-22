@@ -18,10 +18,22 @@
 		<!-- Setter 사용 -->
 		<property name="arm_Left" ref="arm_Left"></property>
 		<property name="arm_Right" ref="arm_Right"></property>
+		
 		<!-- 생성자 사용 -->
+		
+		<!-- name 속성 (생성자에 사용된 변수명) 사용 -->
 		<constructor-arg name="age" value="20"></constructor-arg>
 		<constructor-arg name="name" value="R1"></constructor-arg>
 		<constructor-arg name="price" value="200"></constructor-arg>
+		
+		<!-- index 속성 (생성자의 매개변수 선언 순서) 사용 -->
+		<!-- <constructor-arg index="0" value="20"></constructor-arg>
+		<constructor-arg index="1" value="R1"></constructor-arg>
+		<constructor-arg index="2" value="200"></constructor-arg> -->
+		
+		<!-- 데이터타입 (생성자의 매개변수의 데이터타입) 사용 -->
+		<!-- <constructor-arg type="int"></constructor-arg> -->
+		
 	</bean>
 	
 </beans>
